@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "diff-amrsa"
+version = "0.1.0"
+description = "Diff-AMRSA: anti-MRSA molecule generation with Megalodon-based 3D diffusion fine-tuning"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "See LICENSE/"}
+authors = [{name = "Diff-AMRSA contributors"}]
+
+[tool.setuptools.packages.find]
+where = ["src"]
