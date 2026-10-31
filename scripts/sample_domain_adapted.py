@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Sample Diff-AMRSA molecules and rank with Scheme A predictor.
+Sample Megalodon molecules and rank with Scheme A predictor.
 
 Output meaning
 - pred_pmic_ug_ml is predicted active MIC from the active only regressor
@@ -28,10 +28,10 @@ from rdkit import Chem, DataStructs, RDLogger
 from rdkit.Chem import AllChem, Descriptors, Lipinski, QED, rdMolDescriptors
 from rdkit.Chem.FilterCatalog import FilterCatalog, FilterCatalogParams
 
-from diff_amrsa.data.molecule_datamodule import MoleculeDataModule
-from diff_amrsa.data.statistics import Statistics
-from diff_amrsa.metrics.molecule_evaluation_callback import MoleculeEvaluationCallback
-from diff_amrsa.models.module import Graph3DInterpolantModel
+from megalodon.data.molecule_datamodule import MoleculeDataModule
+from megalodon.data.statistics import Statistics
+from megalodon.metrics.molecule_evaluation_callback import MoleculeEvaluationCallback
+from megalodon.models.module import Graph3DInterpolantModel
 
 RDLogger.DisableLog("rdApp.*")
 
@@ -64,7 +64,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--compute_3d_metrics", action="store_true",
                         help="Enable 3D geometry metrics during sampling. Disabled by default for robust MRSA ranking.")
     parser.add_argument("--compare_group", type=str, default="",
-                        help="Optional group name such as original_geom, scratch_mrsa or finetune_mrsa")
+                        help="Optional group name such as pretrained_baseline, scratch_mrsa or finetune_mrsa")
     return parser.parse_args()
 
 

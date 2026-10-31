@@ -3,13 +3,19 @@ set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "${ROOT_DIR}"
+if [[ "${1:-help}" == "help" || "${1:-}" == "--help" ]]; then
+  echo "Legacy baseline runner; not the full Diff-AMRSA model"
+  echo "Usage: bash scripts/run_legacy_pipeline.sh --config configs/local.env <step>"
+  exit 0
+fi
 
 if [[ "${1:-}" == "--config" ]]; then
   shift
   source "${1}"
   shift
 else
-  source "${ROOT_DIR}/configs/diff_amrsa_paths.env"
+  echo "Please provide a local config: bash scripts/run_legacy_pipeline.sh --config configs/local.env <step>" >&2
+  exit 2
 fi
 
 STEP="${1:-help}"
@@ -47,7 +53,7 @@ case "${STEP}" in
       --n_jobs 4
     ;;
   finetune)
-    python scripts/finetune.py \
+    python scripts/train_domain_adaptation.py \
       --config-path conf/drugs \
       --config-name diff_amrsa_finetune \
       resume="${DIFF_AMRSA_PRETRAINED_CKPT}" \
@@ -57,12 +63,12 @@ case "${STEP}" in
     ;;
   sample)
     mkdir -p "${DIFF_AMRSA_GENERATED_DIR}"
-    python scripts/sample_diff_amrsa.py \
+    python scripts/sample_domain_adapted.py \
       --config_path scripts/conf/drugs/diff_amrsa_finetune.yaml \
       --ckpt_path "${DIFF_AMRSA_FINETUNED_CKPT}" \
       --predictor "${DIFF_AMRSA_PREDICTOR}" \
-      --save_path "${DIFF_AMRSA_GENERATED_DIR}/diff_amrsa" \
-      --save_name diff_amrsa_candidates \
+      --save_path "${DIFF_AMRSA_GENERATED_DIR}/domain_adaptation" \
+      --save_name domain_adapted_candidates \
       --n_graphs "${DIFF_AMRSA_N_GRAPHS}" \
       --batch_size "${DIFF_AMRSA_SAMPLE_BATCH_SIZE}" \
       --timesteps "${DIFF_AMRSA_TIMESTEPS}" \
@@ -80,12 +86,12 @@ case "${STEP}" in
       --save_sdf
     ;;
   analyze)
-    python table/generate_table_4_2_from_csv.py \
-      --generated_csv "${DIFF_AMRSA_GENERATED_DIR}/diff_amrsa/diff_amrsa_candidates_ranked.csv" \
+    python evaluation/tables/generate_table_4_2_from_csv.py \
+      --generated_csv "${DIFF_AMRSA_GENERATED_DIR}/domain_adaptation/domain_adapted_candidates_ranked.csv" \
       --training_csv "${DIFF_AMRSA_PROCESSED_CSV}" \
       --out_csv "${DIFF_AMRSA_GENERATED_DIR}/table_4_2_molecular_quality.csv" || true
-    python table/generate_table_4_4_domain_consistency.py \
-      --generated_csv "${DIFF_AMRSA_GENERATED_DIR}/diff_amrsa/diff_amrsa_candidates_ranked.csv" \
+    python evaluation/tables/generate_table_4_4_domain_consistency.py \
+      --generated_csv "${DIFF_AMRSA_GENERATED_DIR}/domain_adaptation/domain_adapted_candidates_ranked.csv" \
       --reference_csv "${DIFF_AMRSA_PROCESSED_CSV}" \
       --out_csv "${DIFF_AMRSA_GENERATED_DIR}/table_4_4_domain_consistency.csv" || true
     ;;
@@ -96,8 +102,8 @@ case "${STEP}" in
     ;;
   help|*)
     cat <<EOF
-Usage: bash scripts/run_diff_amrsa_pipeline.sh [raw|scheme_a|conformers|predictor|finetune|sample|baseline|analyze|all]
-Optional: bash scripts/run_diff_amrsa_pipeline.sh --config configs/diff_amrsa_paths.env <step>
+Usage: bash scripts/run_legacy_pipeline.sh [raw|scheme_a|conformers|predictor|finetune|sample|baseline|analyze|all]
+Optional: bash scripts/run_legacy_pipeline.sh --config configs/local.env <step>
 EOF
     ;;
 esac

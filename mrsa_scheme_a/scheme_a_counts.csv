@@ -1,0 +1,11 @@
+﻿column,value,count
+activity_label,1,37506
+activity_label,0,9847
+mic_censor_type,exact_active,37506
+mic_censor_type,inactive_over_threshold,9847
+generation_repeat,2,14744
+generation_repeat,6,11752
+generation_repeat,4,11010
+generation_repeat,1,9847
+pmic_regression_mask,1,37506
+pmic_regression_mask,0,9847

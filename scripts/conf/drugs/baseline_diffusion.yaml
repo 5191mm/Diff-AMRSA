@@ -8,7 +8,7 @@ wandb_params:
   project: 'Diff-AMRSA'
 
 data:
-  dataset_root: ${oc.env:DIFF_AMRSA_GEOM_DATASET_ROOT,/autodl-fs/data/drugs_data/geom_processed}
+  dataset_root: ${oc.env:DIFF_AMRSA_GEOM_DATASET_ROOT,/path/to/geom_drugs_processed}
   processed_folder: "processed"
   batch_size: &batch_size 85
   inference_batch_size: 85

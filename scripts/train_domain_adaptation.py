@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # SPDX-License-Identifier: Apache-2.0
 """
-MRSA Diff-AMRSA fine-tuning entrypoint based on the working weights-only script.
+MRSA Megalodon finetuning entrypoint based on the working weights-only script.
 
 This file is intentionally based on train_mrsa_finetune_weights_only.py logic:
   - Load checkpoint weights through Graph3DInterpolantModel.load_from_checkpoint()
@@ -27,18 +27,18 @@ import time
 from pathlib import Path
 from typing import Any, Dict, Iterable, Optional
 
-print("BOOT: finetune.py started", flush=True)
+print("BOOT: train_mrsa_finetune_weights_only_loss_log.py started", flush=True)
 
 import hydra
 from lightning import pytorch as pl
 from lightning.pytorch.callbacks import Callback, LearningRateMonitor, ModelCheckpoint
 from omegaconf import DictConfig, OmegaConf
 
-from diff_amrsa.data.batch_preprocessor import BatchPreProcessor
-from diff_amrsa.data.molecule_datamodule import MoleculeDataModule
-from diff_amrsa.data.statistics import Statistics
-from diff_amrsa.metrics.molecule_evaluation_callback import MoleculeEvaluationCallback
-from diff_amrsa.models.module import Graph3DInterpolantModel
+from megalodon.data.batch_preprocessor import BatchPreProcessor
+from megalodon.data.molecule_datamodule import MoleculeDataModule
+from megalodon.data.statistics import Statistics
+from megalodon.metrics.molecule_evaluation_callback import MoleculeEvaluationCallback
+from megalodon.models.module import Graph3DInterpolantModel
 
 
 def resolve_checkpoint_path(resume_value: Optional[str]) -> Optional[str]:
@@ -284,7 +284,7 @@ class EpochMetricCsvLogger(Callback):
 def main(cfg: DictConfig) -> None:
     logging.basicConfig(level=logging.INFO)
     print("BOOT: Hydra config loaded", flush=True)
-    logging.info("\n\n************** Diff-AMRSA fine-tuning configuration ***********")
+    logging.info("\n\n************** MRSA finetune weights-only + loss-log configuration ***********")
     pl.seed_everything(cfg.train.seed)
     logging.info(f"\n{OmegaConf.to_yaml(cfg)}")
 

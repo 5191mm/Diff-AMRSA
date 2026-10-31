@@ -1,0 +1,1079 @@
+{
+  "project": "Diff-AMRSA",
+  "release_version": "0.1.0",
+  "source": "User-uploaded Diff-AMRSA.zip revised for GitHub; README includes the A/B/C model overview figure",
+  "generated_files": [
+    {
+      "path": ".gitattributes",
+      "size": 68,
+      "sha256": "d8fb0de4792538f93822b2c0d235604921299d5e54a3d6ec7a6cb34536e8bf1e"
+    },
+    {
+      "path": ".gitignore",
+      "size": 588,
+      "sha256": "717d187d9d39a824b9323d85e9c346cdb35f656d84e38a6d5305c8e012c7f059"
+    },
+    {
+      "path": "CITATION.cff",
+      "size": 709,
+      "sha256": "2a50f54aa1decbf5b41b6db933bbe47bdc5fddba4df8a75d87ad2360930b776b"
+    },
+    {
+      "path": "LICENSE/license_code.txt",
+      "size": 11357,
+      "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+    },
+    {
+      "path": "LICENSE/license_weights.txt",
+      "size": 9730,
+      "sha256": "1dc7d3bf639a7527a0063fb035d824e0cb6e49b83694b2c877b125f1dbdb0dbb"
+    },
+    {
+      "path": "LICENSE/third_party.txt",
+      "size": 3491,
+      "sha256": "6f427cc8a1ec61442ac62ae41f855c9658ffcfddfe5839074d66b4f700d2306f"
+    },
+    {
+      "path": "MODEL_CARD.md",
+      "size": 1682,
+      "sha256": "b4f0fac949038f37c370cc71a0dcbf84e1915ab2c5a27340f226c45d75c5a0b7"
+    },
+    {
+      "path": "MODEL_CARD_UPSTREAM.md",
+      "size": 8269,
+      "sha256": "259ca4e4ee7b6a6cdfe3960c3259d3e6b50c6d0782fc391e446a916c77f31c7c"
+    },
+    {
+      "path": "README.md",
+      "size": 7406,
+      "sha256": "062bedfd487ccaa5ea71e7c740366c6f1fa8f4859498e7543b9a125ef1e2cabe"
+    },
+    {
+      "path": "VERSION",
+      "size": 6,
+      "sha256": "e9dd8507f4bf0c6f42458e41aea833ad0bd3f6127272335eee9bf4d58541ed67"
+    },
+    {
+      "path": "assets/diff_amrsa_overview.png",
+      "size": 1904377,
+      "sha256": "156a7a35a36960b185b0e14af6cade904aabd2e8e7ac85dcbc55f1927ab31fca"
+    },
+    {
+      "path": "configs/paths.example.env",
+      "size": 1333,
+      "sha256": "6aa762111e1f68325a312a28d394f1059bd25ad2095a29e14a41a51618250fa5"
+    },
+    {
+      "path": "data/README.md",
+      "size": 456,
+      "sha256": "c4d4496196bc0e65dc8802876ddba78554c1e762ca76d7c958b7949df8472841"
+    },
+    {
+      "path": "data_processing/README.md",
+      "size": 1557,
+      "sha256": "97d7fd19574c06cc5902d6fe8ba3e910dbb48785c9017283960c988c1caecc61"
+    },
+    {
+      "path": "data_processing/__init__.py",
+      "size": 52,
+      "sha256": "33eb8b7117d37f912759cbc2706e4215580386d9accb3df961ecf91cd739d590"
+    },
+    {
+      "path": "data_processing/assign_sample_weights.py",
+      "size": 10050,
+      "sha256": "10be3f66acb9e8fd7c8a55e87e7c4f79bfe1891c66cb53c96ee08b548e84c93b"
+    },
+    {
+      "path": "data_processing/build_conformers.py",
+      "size": 21313,
+      "sha256": "043d6d0c82d431d8fcde84c8dd03d289c8ce5dba8392e20b8b6c0a570240e9e2"
+    },
+    {
+      "path": "data_processing/build_conformers_core.py",
+      "size": 22454,
+      "sha256": "7ff71f73de70fa1a0b598e70a858d3e3e9d024e3d47cb8710d143e573734b57f"
+    },
+    {
+      "path": "data_processing/merge_activity_tables.py",
+      "size": 17569,
+      "sha256": "054674ca2a525db566a1f25e6d663d63e933ea72716ef927007b86051cf81ce9"
+    },
+    {
+      "path": "data_processing/prepare_dataset.py",
+      "size": 7747,
+      "sha256": "751377fd174ba5a38bccad75cefb84404d88f6a5627471a6def3f9163fcf09b1"
+    },
+    {
+      "path": "data_processing/prepare_raw_tables.py",
+      "size": 19503,
+      "sha256": "9c4d56f9956b5cd4f26582ad78b9a462fde37321fe7aeb5f609f3211ba0223f7"
+    },
+    {
+      "path": "data_processing/utils_data.py",
+      "size": 7968,
+      "sha256": "0462e69c23a9bcaaf7b9431ef507cec321b632bde7a149914de414df66ef2d33"
+    },
+    {
+      "path": "docs/BASELINE_COMPARISON.md",
+      "size": 2206,
+      "sha256": "5d8de8d61e668a3696a37feb67588e6ceb4d0994b0cc7745e37995c1f4647b90"
+    },
+    {
+      "path": "docs/EXPERIMENT_GUIDE.md",
+      "size": 8102,
+      "sha256": "004e631c20c9edefcaddf5727ccdfb706f380ecf0e843a96ec9dd33fcc5fec62"
+    },
+    {
+      "path": "docs/GITHUB_DESKTOP_UPDATE.md",
+      "size": 1382,
+      "sha256": "c03d6abec01eb89492b42c78b273812f4d2b725f3ec7fb6f30dd82fd62250df3"
+    },
+    {
+      "path": "docs/METHOD_IMPLEMENTATION_AUDIT.md",
+      "size": 5495,
+      "sha256": "29c0de8b1213f79c4c557a7b7599caabf8655335ac83d3503ce3ef924648a01e"
+    },
+    {
+      "path": "docs/REPOSITORY_AUDIT.md",
+      "size": 7759,
+      "sha256": "a1038c0d7ccfab6acf335ddaa89de74126ab7cd802254bfe2713e9cb4b945c8b"
+    },
+    {
+      "path": "evaluation/figures/BILINGUAL_LABEL_README.md",
+      "size": 1448,
+      "sha256": "a50ebc6caafb12c98406f11e4353ff65795ef8a308bf26f858122841ae235a66"
+    },
+    {
+      "path": "evaluation/figures/EXECUTION_COMMANDS.md",
+      "size": 1261,
+      "sha256": "0b54c6b4eb64f0638c2cbb17473f5f47ac542b3b0b27908eb892b1a920a0dca2"
+    },
+    {
+      "path": "evaluation/figures/analyze_three_line_database_closeness.py",
+      "size": 30803,
+      "sha256": "b0a98d0ce34666016d6bb738b37d6ad557cd6828ebb9933b4f949a937ee064b5"
+    },
+    {
+      "path": "evaluation/figures/bilingual_figure_labels.py",
+      "size": 7952,
+      "sha256": "44b41914beede685e3e0d7c3837cc067618426750c4d993e80f8f81e7e7c043e"
+    },
+    {
+      "path": "evaluation/figures/compare_four_group_mrsa_database_closeness.py",
+      "size": 26566,
+      "sha256": "84b014d2e3ee518fa166492d0e6777c9a881c4add539495297d5c96973ade60d"
+    },
+    {
+      "path": "evaluation/figures/compare_sampling_properties_scatter_three_lines.py",
+      "size": 14408,
+      "sha256": "4cdd65c39eda404a6f8eb739d26960d56735b39c31b81509822458f0934fc165"
+    },
+    {
+      "path": "evaluation/figures/compare_sdf_properties_scatter.py",
+      "size": 8370,
+      "sha256": "a1b7a4e51169231b7384db5a0b116e230a4d1735e600cea47cea3236397cc8db"
+    },
+    {
+      "path": "evaluation/figures/export_svg_bilingual_labels.py",
+      "size": 128,
+      "sha256": "7808fc6aef94583104758be12106163d6fcff071a53abf8ef6b30b8600c91cd4"
+    },
+    {
+      "path": "evaluation/figures/plot_four_line_known_all_vs_known_top100_distribution.py",
+      "size": 20067,
+      "sha256": "1f963871ababd78938b657cf68b11d5dbcdef1eee99fa39a420adf93a1211e48"
+    },
+    {
+      "path": "evaluation/figures/plot_four_line_score_consistent_known_top100_distribution.py",
+      "size": 16557,
+      "sha256": "e2b59a3b670ebd7b84f9dfc177e0a07365eb83fe6e6fac7604d4cfea38c9d9f6"
+    },
+    {
+      "path": "evaluation/figures/plot_mrsa_distribution_comparison_four_groups.py",
+      "size": 13200,
+      "sha256": "a468d530b5a00c8f64419f1bca5ef404d4173a0bca4cea6dbc83ae1b28a3a2bf"
+    },
+    {
+      "path": "evaluation/figures/plot_mrsa_distribution_comparison_v3.py",
+      "size": 12001,
+      "sha256": "a420964259e8fdfadb64273a3d5101d4141c4266934d576c0c1fa743deddd8e0"
+    },
+    {
+      "path": "evaluation/figures/plot_three_line_distribution_compare.py",
+      "size": 12740,
+      "sha256": "d97d85b03cea4e94878ef9a917f475f93a35716ba8024959e2b230446a7b327b"
+    },
+    {
+      "path": "evaluation/figures/plot_three_line_distribution_compare_top100.py",
+      "size": 12030,
+      "sha256": "a090c9d6fef1c0f90004731678e5d8d876f53d7dd95895fdf8ed55707009f5b5"
+    },
+    {
+      "path": "evaluation/figures/plot_three_line_distribution_top100.py",
+      "size": 10374,
+      "sha256": "3b59e030c3466c322b92bc45c62c0682a5c9e2a741e4c87b95efc5a282708558"
+    },
+    {
+      "path": "evaluation/figures/plot_top10_molecules.py",
+      "size": 7817,
+      "sha256": "03a91308460349c5db6ccfc135ee6e6db151725ac27142eae1813f90f9d05c60"
+    },
+    {
+      "path": "evaluation/figures/run_all_figures_and_collect_svgs.sh",
+      "size": 8296,
+      "sha256": "6774d3dc6f60bb3adff1d4e3d6ab1b1a802603ccc5ef282bdb5d6fe73b462224"
+    },
+    {
+      "path": "evaluation/figures/run_full_mrsa_generation_experiments.py",
+      "size": 70198,
+      "sha256": "f6948ba4f1953bdeee255f33ce457afe9d055a7f179fae15fa628da4f3868e75"
+    },
+    {
+      "path": "evaluation/figures/run_paper_style_mrsa_figures.py",
+      "size": 68808,
+      "sha256": "eebf139ad1a6a794e6cd56cc1ffe531b1240619d8cd1e62d5a028526df1ef1dd"
+    },
+    {
+      "path": "evaluation/figures/run_rcfr_generation_and_closeness_experiments.py",
+      "size": 52340,
+      "sha256": "21b5d15abf929cc2312e23401fa438c89e343d37acd174753dc9e4a57cd1ea81"
+    },
+    {
+      "path": "evaluation/tables/calc_table_4_4_domain_consistency_compare.py",
+      "size": 12817,
+      "sha256": "a9995fe17ef843551ebc3cb880767e4ae0140a1fa8ec9cc014d26dae6a1d7efd"
+    },
+    {
+      "path": "evaluation/tables/generate_table_4_2_from_csv.py",
+      "size": 13842,
+      "sha256": "a9695898707ed4aea8e2993dbb5f4e56a99af8c2034bcfa4b1d3b7878cba1bb0"
+    },
+    {
+      "path": "evaluation/tables/generate_table_4_2_molecular_quality_docx.py",
+      "size": 14829,
+      "sha256": "dded7aebdb6e94c098b42dfc670c18ab1a4d207a371eb45040c29c69f8f69e73"
+    },
+    {
+      "path": "evaluation/tables/generate_table_4_2_three_groups.py",
+      "size": 3711,
+      "sha256": "09f093e8caf04e23b97f403effa73649fb2240531fff0e8bf8c272dba3bf0883"
+    },
+    {
+      "path": "evaluation/tables/generate_table_4_4_domain_consistency.py",
+      "size": 20314,
+      "sha256": "1c7074c5b977e86b46a6450f6ecfec1400f1c7dd0942dd11f15c6d7e4825e6a1"
+    },
+    {
+      "path": "evaluation/tables/generate_table_4_4_three_groups.py",
+      "size": 4783,
+      "sha256": "99529b188ac637c827adabe32530acb09c1ea4fac1faee14aabbee3ffc9f88e6"
+    },
+    {
+      "path": "mrsa_scheme_a/processed_drug_mic_dataset_schemeA.csv",
+      "size": 6344453,
+      "sha256": "153e6fa4514dfdc2fad88b32aeb0cc8257a7eceab80ae5ca7a917f242e6f89a4"
+    },
+    {
+      "path": "mrsa_scheme_a/scheme_a_counts.csv",
+      "size": 307,
+      "sha256": "ebbd5dd5166414e1e9bec6d63140549d64818c5338c0d14c3b8a6946e580c54f"
+    },
+    {
+      "path": "mrsa_scheme_a/scheme_a_summary.json",
+      "size": 482,
+      "sha256": "76c7632072711df4dff926b8766494020b7fd566b4407fdbed34893e90892ecf"
+    },
+    {
+      "path": "processed_drug_mic_dataset.csv",
+      "size": 4084773,
+      "sha256": "99de5e467c580957d83d1462eed2a1041f30dd1ee919b4b4fd3a2bd0dda42d5c"
+    },
+    {
+      "path": "pyproject.toml",
+      "size": 980,
+      "sha256": "c8eca323807c4c1215508cafa9813abb6228aa48917015b33033f60095cd943b"
+    },
+    {
+      "path": "requirements.txt",
+      "size": 690,
+      "sha256": "84f5d5a4fd5103542bb157b8dfd3921d99314020566181d2e29c3c66fd5f91d3"
+    },
+    {
+      "path": "scripts/build_practice_attachment_materials.py",
+      "size": 47581,
+      "sha256": "dfdf009173ad479b56d591a1408fa3ec62dd65b94b614258d50cd3e448992224"
+    },
+    {
+      "path": "scripts/check_ckpt_hparams_strict.py",
+      "size": 1828,
+      "sha256": "3f3fe942be5169b97fafc1905c4a8efdc28d4df04e4153973c28e1a5d858815f"
+    },
+    {
+      "path": "scripts/check_strict_mrsa_compare.py",
+      "size": 2615,
+      "sha256": "14a83926a45b7b94d0cfca9daa743c6217b6b1277b97e0ea9f9843ba82fbeddc"
+    },
+    {
+      "path": "scripts/conf/drugs/baseline_diffusion.yaml",
+      "size": 4828,
+      "sha256": "6193b7da2fd8fb0bb14173d3f131d0bc2ad64793d988f7b25c5de79a496088bd"
+    },
+    {
+      "path": "scripts/conf/drugs/diff_amrsa_finetune.yaml",
+      "size": 4776,
+      "sha256": "9faebef716aec2daa6830013f3e90acf927299327ded5b5f9d081e486b6e8ab5"
+    },
+    {
+      "path": "scripts/conf/drugs/diff_amrsa_scratch.yaml",
+      "size": 4773,
+      "sha256": "961c07f2f2ef6ab598d4f76e26befae8e83116dc8eaf85cf7334826ccac92c96"
+    },
+    {
+      "path": "scripts/conf/drugs/megalodon_diffusion.yaml",
+      "size": 4801,
+      "sha256": "4329a9d25a10ce2c5408967d09ce5fe9079281c340b39ae6130922153215b446"
+    },
+    {
+      "path": "scripts/conf/drugs/mrsa_diffusion_finetune_scheme_a.yaml",
+      "size": 4775,
+      "sha256": "05b046c283b45a0d6d9323f4656a0b22d67ebc714d63907a712a9efb8049add1"
+    },
+    {
+      "path": "scripts/conf/drugs/mrsa_diffusion_scratch_scheme_a.yaml",
+      "size": 4772,
+      "sha256": "e4a7e5a0105a9d5793deb365ac559293e629c46e308e6383e178f8b7fd5a52c7"
+    },
+    {
+      "path": "scripts/diff_amrsa/build_library.py",
+      "size": 1340,
+      "sha256": "d91efcb29f8862f19f1218a140ac155a9725e00f7895de2cc861f853349bfcff"
+    },
+    {
+      "path": "scripts/diff_amrsa/export_conformers.py",
+      "size": 1565,
+      "sha256": "b03a1df50cb6d71feca8abe1135bff805b9ea76eb0c0e8cf38fd059679178be3"
+    },
+    {
+      "path": "scripts/diff_amrsa/export_splits.py",
+      "size": 651,
+      "sha256": "345924d70eda522d9355563d9c5cd62ef1a530248e2b5ce4b6d29352283c8793"
+    },
+    {
+      "path": "scripts/diff_amrsa/sample_pipeline.py",
+      "size": 5104,
+      "sha256": "a05f5e151be9d736665aed0641c251d8d74d392f8ffcb605eb0a2e0f70748b19"
+    },
+    {
+      "path": "scripts/diff_amrsa/screen_and_rank.py",
+      "size": 3420,
+      "sha256": "28c4169cd4e00f2d17e4886cb051bc4d04b8e37ced349aa27ca822b198b37786"
+    },
+    {
+      "path": "scripts/diff_amrsa/train_activity_proxy.py",
+      "size": 3521,
+      "sha256": "d4c884ee12aa1c0c03560ecff598ca120f24cd62df54c9bacd0c4baef9f6ce32"
+    },
+    {
+      "path": "scripts/diff_amrsa/train_conditioned_diffusion.py",
+      "size": 2872,
+      "sha256": "85768feb3b5bcfd57794bc3d141818230d836a83a17ee8eb920a5b442071a91c"
+    },
+    {
+      "path": "scripts/diff_amrsa/train_flow.py",
+      "size": 5469,
+      "sha256": "7dd843a95c9eaa3af18ffc7b8a2e427a718600514e1c8baa8260893a7d3d4027"
+    },
+    {
+      "path": "scripts/diff_amrsa/train_graph_encoder.py",
+      "size": 4520,
+      "sha256": "b38b8fbf1bca320c696d1e5e44bfd72bcbb9002dda54874d7988568ad9e5e3cf"
+    },
+    {
+      "path": "scripts/learn_bin_weights.py",
+      "size": 7568,
+      "sha256": "943ef1c4d442c5166a13aae7b88af6ae93c2295abd739725e68a1320a2640f6b"
+    },
+    {
+      "path": "scripts/rerank_mrsa_with_sa.py",
+      "size": 9208,
+      "sha256": "53740748644c011df78621449ae0813797cee2b72469d4bc0adaeb8804ec67ec"
+    },
+    {
+      "path": "scripts/rerun_three_line_sampling_robust_table_weights.sh",
+      "size": 3521,
+      "sha256": "0311c9734a1ba711f873d76724f6a8b3c24680c56ff2cc3b5cb2c303d166c0fc"
+    },
+    {
+      "path": "scripts/run_legacy_pipeline.sh",
+      "size": 4158,
+      "sha256": "2d9789eda59f61923aa195b1412cc78404768c7a57457efb2147a78511269582"
+    },
+    {
+      "path": "scripts/run_pipeline.sh",
+      "size": 1402,
+      "sha256": "b26217e26f7e45f9abdfb8fffe0c0781972cfe2da88c2380e8bf7a16be89e483"
+    },
+    {
+      "path": "scripts/run_strict_mrsa_two_lines.sh",
+      "size": 2660,
+      "sha256": "d39b1f36bef780f2a125bfe137691210b172c3910f9d3fa26211c1e50980f6bb"
+    },
+    {
+      "path": "scripts/run_three_line_sampling_all_sdf.sh",
+      "size": 4087,
+      "sha256": "b2b20660edaf7b20ed1dbf054d5e0cb0f2647330cf8e9a7980691f778d6be968"
+    },
+    {
+      "path": "scripts/sample.py",
+      "size": 8647,
+      "sha256": "c6d3ac20a60e04e2a145a9e720e10a8ea53cae9987c4718a9d9691a512a5284c"
+    },
+    {
+      "path": "scripts/sample_baseline.py",
+      "size": 8651,
+      "sha256": "fd602f86783cfc3cc9ce06f246cd4c89d9f7bb692e4e7645948c04bc505e0289"
+    },
+    {
+      "path": "scripts/sample_domain_adapted.py",
+      "size": 17373,
+      "sha256": "adee27461650750cea38b75d23b87ef214298574d79a608c7c9388f03a650f13"
+    },
+    {
+      "path": "scripts/sample_domain_adapted_robust.py",
+      "size": 17719,
+      "sha256": "71ff56ecd617adb4a16a54242ce9610a85c561ee1e955d5b68884cd88e66a9fd"
+    },
+    {
+      "path": "scripts/train.py",
+      "size": 6894,
+      "sha256": "740f398d1b767d5803a19898d5118e0e7bb5d8d5dca77ca17e4c6c721f539bcf"
+    },
+    {
+      "path": "scripts/train_activity_predictor.py",
+      "size": 15512,
+      "sha256": "c88d722d65ac7356a85e533ad17f06c1ccf3590c63134e54f5c172313b9f357c"
+    },
+    {
+      "path": "scripts/train_domain_adaptation.py",
+      "size": 20653,
+      "sha256": "b035c6e681c0edfc89f56b9d4d8f910ffd3aca65c07828f1987fa19d5beb4166"
+    },
+    {
+      "path": "scripts/train_domain_adaptation_fresh.py",
+      "size": 7585,
+      "sha256": "849f9b78e625062f06580d44149c11bc23903d2e60ab6448e6c512667205870e"
+    },
+    {
+      "path": "scripts/tune_rerank_weights_to_mrsa_distribution.py",
+      "size": 15792,
+      "sha256": "8d104c947274586dddf5d56e97168e74fc28166be8ebc1234074da1a35e7ab46"
+    },
+    {
+      "path": "src/diff_amrsa/__init__.py",
+      "size": 112,
+      "sha256": "084996750d18b5e3445eedad3aa37f888ec0505562df0f7fff47b2877378bc03"
+    },
+    {
+      "path": "src/diff_amrsa/activity_features.py",
+      "size": 938,
+      "sha256": "0db62efc81cd653603065f01e17c90697d476921f17b0193a88b4666e8d3bbb6"
+    },
+    {
+      "path": "src/diff_amrsa/chemistry.py",
+      "size": 5000,
+      "sha256": "7385c0829bb1dc78ce92581f0b601b722b779a37ec27484885820a977b3567fd"
+    },
+    {
+      "path": "src/diff_amrsa/conditional_model.py",
+      "size": 4639,
+      "sha256": "358dcbd56c56838571ca0445e92cfcd390d4f03913493f37ac0983d198c34667"
+    },
+    {
+      "path": "src/diff_amrsa/conditioning.py",
+      "size": 2934,
+      "sha256": "eb6a21ad420fbd60e9b2762a92ee2be89c5de85412242059e00bf9a964024a81"
+    },
+    {
+      "path": "src/diff_amrsa/data/__init__.py",
+      "size": 680,
+      "sha256": "057225c89d8aa03a0fb960c3cacf61e46897ec858de905d506ec1d087becb46a"
+    },
+    {
+      "path": "src/diff_amrsa/data/adaptive_dataloader.py",
+      "size": 8983,
+      "sha256": "bc338e40e27b9270679f5ba0ddbaa2c98b8fe51671e1dbde63e4cb79e6bef199"
+    },
+    {
+      "path": "src/diff_amrsa/data/batch_preprocessor.py",
+      "size": 3713,
+      "sha256": "d0c494b71aef8d268b39909c8f511aa3f04dce26466e3f63d365eb8e53d70449"
+    },
+    {
+      "path": "src/diff_amrsa/data/data_utils.py",
+      "size": 12105,
+      "sha256": "6f5c9e7a87a17e779824d33e223af73d8deb391a855fecc6d5071323e1535ec2"
+    },
+    {
+      "path": "src/diff_amrsa/data/midi_dataloader.py",
+      "size": 5255,
+      "sha256": "b0c9104024adc354911b8c7ec35a2704acbffdaee07363c92d7e4a7eea93fec8"
+    },
+    {
+      "path": "src/diff_amrsa/data/molecule_datamodule.py",
+      "size": 7863,
+      "sha256": "71a15fda594ddab1b2f1262b7a2a64c6257cfd6741fee46c16ba110dd001ba76"
+    },
+    {
+      "path": "src/diff_amrsa/data/molecule_dataset.py",
+      "size": 1865,
+      "sha256": "5111b0cec88431e5957c6d4dc46f507959a113f65edff249b0431f728768f005"
+    },
+    {
+      "path": "src/diff_amrsa/data/random_rotations.py",
+      "size": 3630,
+      "sha256": "41b40087ba80a88737daf6245b784dacf4a0edff81fd301c88d955ba37bbec27"
+    },
+    {
+      "path": "src/diff_amrsa/data/statistics.py",
+      "size": 3106,
+      "sha256": "f742af12b50b9ed479d0336dda8352de44cbec9ea39e7d64df6e64a9e1f7d022"
+    },
+    {
+      "path": "src/diff_amrsa/dataset.py",
+      "size": 3721,
+      "sha256": "ba34dea838e7ed0d6499390e321423159212cd6d5cd879ee5343dce230f8a301"
+    },
+    {
+      "path": "src/diff_amrsa/dynamics/__init__.py",
+      "size": 680,
+      "sha256": "057225c89d8aa03a0fb960c3cacf61e46897ec858de905d506ec1d087becb46a"
+    },
+    {
+      "path": "src/diff_amrsa/dynamics/eqgat/__init__.py",
+      "size": 680,
+      "sha256": "057225c89d8aa03a0fb960c3cacf61e46897ec858de905d506ec1d087becb46a"
+    },
+    {
+      "path": "src/diff_amrsa/dynamics/eqgat/eqgat_denoising_model.py",
+      "size": 31872,
+      "sha256": "814bc0ae36f623fd6c4cea9a380f438c8c7c3159c3c408bad839fe0cd711729f"
+    },
+    {
+      "path": "src/diff_amrsa/dynamics/eqgat/eqgat_modules.py",
+      "size": 9391,
+      "sha256": "c15f7d046ae24ce091ffb6e2a9a07a112d5755d6d49affb4b670314a87496753"
+    },
+    {
+      "path": "src/diff_amrsa/dynamics/eqgat/eqgat_wrapper.py",
+      "size": 2480,
+      "sha256": "c37b0b6c7fc8f45eb654f04fb01307f94486081b5cbc25f5eef1160f3cfbcdc0"
+    },
+    {
+      "path": "src/diff_amrsa/dynamics/fn_model.py",
+      "size": 28074,
+      "sha256": "4bcc461b5e1959a69b95bd960c547b6c3fad68c6d07917ad40f3d933e9bd2d0f"
+    },
+    {
+      "path": "src/diff_amrsa/dynamics/jodo.py",
+      "size": 23268,
+      "sha256": "25c76ca60f36711d27004d0633a9e48a304014e87b93b992bb786fd74e01ad00"
+    },
+    {
+      "path": "src/diff_amrsa/dynamics/mega_large.py",
+      "size": 72596,
+      "sha256": "f71721ba04c9f21bc1eb79c28760814916d1753fc8a5ac2a0ddef86d79af653f"
+    },
+    {
+      "path": "src/diff_amrsa/dynamics/megaflow_semla_ckpt/__init__.py",
+      "size": 680,
+      "sha256": "057225c89d8aa03a0fb960c3cacf61e46897ec858de905d506ec1d087becb46a"
+    },
+    {
+      "path": "src/diff_amrsa/dynamics/megaflow_semla_ckpt/functional.py",
+      "size": 25758,
+      "sha256": "f64ff12d17f3c7dc53835793984ef655cefcbfe1b964b4d2c5dd0f6fcd94ba92"
+    },
+    {
+      "path": "src/diff_amrsa/dynamics/megaflow_semla_ckpt/mega_pyg.py",
+      "size": 76293,
+      "sha256": "590e5c126266453303c3dc68895d0b32d4fe368e5069e9dd926285125f467c24"
+    },
+    {
+      "path": "src/diff_amrsa/dynamics/megaflow_semla_ckpt/mimic_semla_wrapper.py",
+      "size": 8929,
+      "sha256": "8ad3c0c3a94632b545e90995c6c0d9facc17e3fb9be3af159fc4d3d077d932f4"
+    },
+    {
+      "path": "src/diff_amrsa/dynamics/megaflow_semla_ckpt/original_semla_ckpt.py",
+      "size": 6410,
+      "sha256": "d96a7b4f849b69e499879d7af2badf8d6589fc2a55838736f2f4659ea76ccd3b"
+    },
+    {
+      "path": "src/diff_amrsa/dynamics/megaflow_semla_ckpt/semla.py",
+      "size": 36094,
+      "sha256": "811e47804ee62d4c044432a806dd631eda1294db90fa95565062c4ba0b96260a"
+    },
+    {
+      "path": "src/diff_amrsa/dynamics/megaflow_semla_ckpt/semla_wrapper.py",
+      "size": 4871,
+      "sha256": "62c6a8d08b1918f316d370c09bd76843765fc05f3b1d0f770f6b43f9ad571948"
+    },
+    {
+      "path": "src/diff_amrsa/dynamics/utils.py",
+      "size": 15636,
+      "sha256": "e0811d0ff294c463d21a8d19c05b9ca9f3eadad926a22a42ec7b89be7a6310ac"
+    },
+    {
+      "path": "src/diff_amrsa/flow.py",
+      "size": 5617,
+      "sha256": "cca336d68474efb5106fef11ba67d4a3fe3f495917d530e5785d8cf9f5ef0954"
+    },
+    {
+      "path": "src/diff_amrsa/graph_encoder.py",
+      "size": 4459,
+      "sha256": "4fd3e5d5d33db7e4227a7e3d8eafc280036a8dd5142d1af815708549864284bf"
+    },
+    {
+      "path": "src/diff_amrsa/interpolant/__init__.py",
+      "size": 680,
+      "sha256": "057225c89d8aa03a0fb960c3cacf61e46897ec858de905d506ec1d087becb46a"
+    },
+    {
+      "path": "src/diff_amrsa/interpolant/builder.py",
+      "size": 6585,
+      "sha256": "147fa95a45223a68bec93c58b2d927a469916c8208d3cd082c6c5b785b119ce9"
+    },
+    {
+      "path": "src/diff_amrsa/interpolant/continuous_diffusion.py",
+      "size": 10033,
+      "sha256": "9119aab8f77d44654caa060ebc40c53c708516c138277dcb6b54c4d496633384"
+    },
+    {
+      "path": "src/diff_amrsa/interpolant/continuous_euclidean_fm.py",
+      "size": 10532,
+      "sha256": "86970e26f6a0e2479c406ebfe2aadd96faab19cafbfb5cd093c14e62189be784"
+    },
+    {
+      "path": "src/diff_amrsa/interpolant/discrete_diffusion.py",
+      "size": 12595,
+      "sha256": "120205955c911a5fb7dd0dd44d9cbbde830df5b8a7576773cdfb88c69ff67d6b"
+    },
+    {
+      "path": "src/diff_amrsa/interpolant/discrete_fm.py",
+      "size": 22757,
+      "sha256": "b22514a61f6ce59492a85aece746229cbd88c2d7461ee8f542dd13c51da1ba18"
+    },
+    {
+      "path": "src/diff_amrsa/interpolant/interpolant.py",
+      "size": 4196,
+      "sha256": "b1960cc883bbeecd6e6705f3792aa5cb6c2efc548cfb18a6781f9893685d5108"
+    },
+    {
+      "path": "src/diff_amrsa/interpolant/interpolant_scheduler.py",
+      "size": 9221,
+      "sha256": "f7b4569ea3b3dba4333e92c27c5635579c53ac85fbb5d67743f4e9ca8d5d3da8"
+    },
+    {
+      "path": "src/diff_amrsa/interpolant/interpolant_utils.py",
+      "size": 2029,
+      "sha256": "e22488c47acfdaeec1b548df8042fdb73750659d2ce4dfe91616894503b88a7b"
+    },
+    {
+      "path": "src/diff_amrsa/interpolant/ot.py",
+      "size": 2792,
+      "sha256": "a221517acb42cc269d54998e1ad636e84cc18b09952db8e439c5825bdf11af85"
+    },
+    {
+      "path": "src/diff_amrsa/metrics/__init__.py",
+      "size": 680,
+      "sha256": "057225c89d8aa03a0fb960c3cacf61e46897ec858de905d506ec1d087becb46a"
+    },
+    {
+      "path": "src/diff_amrsa/metrics/fpscores.pkl.gz",
+      "size": 3848394,
+      "sha256": "10dcef9340c873e7b987924461b0af5365eb8dd96be607203debe8ddf80c1e73"
+    },
+    {
+      "path": "src/diff_amrsa/metrics/geometry.py",
+      "size": 4850,
+      "sha256": "7b5144cd7015c64acd8c4978ee206557c683c08c128e9a175281e818fe3fe96b"
+    },
+    {
+      "path": "src/diff_amrsa/metrics/molecule.py",
+      "size": 6012,
+      "sha256": "4b3d14360e14de0fa26aded06e418e3d0e800481fea38b1ce1d29b82d4e9d885"
+    },
+    {
+      "path": "src/diff_amrsa/metrics/molecule_evaluation_callback.py",
+      "size": 7280,
+      "sha256": "6a24457598d95a9ce85e9bef664a4b2bc08791acd84984ee52b53b529423a91b"
+    },
+    {
+      "path": "src/diff_amrsa/metrics/molecule_metrics_2d.py",
+      "size": 7369,
+      "sha256": "94b9a42034fa334630aca9c944257d990b880a9a6422bb8afad669ffcc719dbf"
+    },
+    {
+      "path": "src/diff_amrsa/metrics/molecule_metrics_3d.py",
+      "size": 7761,
+      "sha256": "f83a51265ead036cf5f318a197bcc21d9364c9be885c9b6a1ca7b92b81128e9c"
+    },
+    {
+      "path": "src/diff_amrsa/metrics/molecule_novelty_similarity.py",
+      "size": 4241,
+      "sha256": "15c7823ed038a679a4f8bd567aa2dc65bc0eba9ec25d3fac9b12506ee866a53d"
+    },
+    {
+      "path": "src/diff_amrsa/metrics/molecule_stability_2d.py",
+      "size": 7481,
+      "sha256": "71cc5723f3852985074c77963e05cc39595420d2d8ed9875927f0cdd0e81d8b6"
+    },
+    {
+      "path": "src/diff_amrsa/metrics/utils.py",
+      "size": 2963,
+      "sha256": "e589ac15b7fce237a6393b7661bd1764ca57ddea5340ad03e9c1c46c401febe9"
+    },
+    {
+      "path": "src/diff_amrsa/models/__init__.py",
+      "size": 680,
+      "sha256": "057225c89d8aa03a0fb960c3cacf61e46897ec858de905d506ec1d087becb46a"
+    },
+    {
+      "path": "src/diff_amrsa/models/denoising_models.py",
+      "size": 11166,
+      "sha256": "0c69b20636ebb19d6c93d9b803c0a05fe025407a8f7b869922898d5e38f495af"
+    },
+    {
+      "path": "src/diff_amrsa/models/loss_fn.py",
+      "size": 4702,
+      "sha256": "7581e380dc6eb6025284a191ec095983aa0c260392fd1c56ccaaaadf490d7e27"
+    },
+    {
+      "path": "src/diff_amrsa/models/module.py",
+      "size": 30141,
+      "sha256": "c19a534a770bda1ea047b10e81c52807d4447e6ea0d67e16ab92ce5d28a7a3ea"
+    },
+    {
+      "path": "src/diff_amrsa/models/module_adaptive_sample_weight.py",
+      "size": 31232,
+      "sha256": "73fa17f6839164fc8eecdd484991cf21f86edada185eca7ee3bf00e89f20df52"
+    },
+    {
+      "path": "src/diff_amrsa/models/scheduler.py",
+      "size": 3212,
+      "sha256": "385005ee3788f5751f4d399d30f7aea43452240b0af5fc73d32613f9169043da"
+    },
+    {
+      "path": "src/diff_amrsa/models/self_conditioning.py",
+      "size": 7695,
+      "sha256": "495d0459a874a75e92d0c10a98278281e7f43d56ccdd66794c35b983d090834b"
+    },
+    {
+      "path": "src/diff_amrsa/models/utils_train.py",
+      "size": 2109,
+      "sha256": "b528cb01163c84289690a15b9742357f2dabf6685834a1d99e0d6b343f5ebe7b"
+    },
+    {
+      "path": "src/diff_amrsa/retrieval.py",
+      "size": 4326,
+      "sha256": "b03b5a5172be8301e48dd69125fb00a4b140fb07be5055afc0124117083b4908"
+    },
+    {
+      "path": "src/diff_amrsa/screening.py",
+      "size": 8024,
+      "sha256": "73a564e39df5336b1c47c406e70ea07da17d5ab02f90c4200c7b8093563882ef"
+    },
+    {
+      "path": "src/megalodon/__init__.py",
+      "size": 680,
+      "sha256": "057225c89d8aa03a0fb960c3cacf61e46897ec858de905d506ec1d087becb46a"
+    },
+    {
+      "path": "src/megalodon/data/__init__.py",
+      "size": 680,
+      "sha256": "057225c89d8aa03a0fb960c3cacf61e46897ec858de905d506ec1d087becb46a"
+    },
+    {
+      "path": "src/megalodon/data/adaptive_dataloader.py",
+      "size": 8983,
+      "sha256": "bc338e40e27b9270679f5ba0ddbaa2c98b8fe51671e1dbde63e4cb79e6bef199"
+    },
+    {
+      "path": "src/megalodon/data/batch_preprocessor.py",
+      "size": 3712,
+      "sha256": "1a2b3537ac7777043402a310cfdb7587099a86aca96bfea119e8c4bca028fa68"
+    },
+    {
+      "path": "src/megalodon/data/data_utils.py",
+      "size": 12105,
+      "sha256": "6f5c9e7a87a17e779824d33e223af73d8deb391a855fecc6d5071323e1535ec2"
+    },
+    {
+      "path": "src/megalodon/data/midi_dataloader.py",
+      "size": 5254,
+      "sha256": "8e68ea1f5b49f970be3a490715e949cb877af7d8afcdf96a83abfcea811ab6fd"
+    },
+    {
+      "path": "src/megalodon/data/molecule_datamodule.py",
+      "size": 7860,
+      "sha256": "eb0c083cd919595a834bfbd68c43ef2ff40ebd921cc52b0264e6e9c49b29570f"
+    },
+    {
+      "path": "src/megalodon/data/molecule_dataset.py",
+      "size": 1865,
+      "sha256": "5111b0cec88431e5957c6d4dc46f507959a113f65edff249b0431f728768f005"
+    },
+    {
+      "path": "src/megalodon/data/random_rotations.py",
+      "size": 3630,
+      "sha256": "41b40087ba80a88737daf6245b784dacf4a0edff81fd301c88d955ba37bbec27"
+    },
+    {
+      "path": "src/megalodon/data/statistics.py",
+      "size": 3106,
+      "sha256": "f742af12b50b9ed479d0336dda8352de44cbec9ea39e7d64df6e64a9e1f7d022"
+    },
+    {
+      "path": "src/megalodon/dynamics/__init__.py",
+      "size": 680,
+      "sha256": "057225c89d8aa03a0fb960c3cacf61e46897ec858de905d506ec1d087becb46a"
+    },
+    {
+      "path": "src/megalodon/dynamics/eqgat/__init__.py",
+      "size": 680,
+      "sha256": "057225c89d8aa03a0fb960c3cacf61e46897ec858de905d506ec1d087becb46a"
+    },
+    {
+      "path": "src/megalodon/dynamics/eqgat/eqgat_denoising_model.py",
+      "size": 31871,
+      "sha256": "004e271ca524f5000d636198d6ba3f69eec7542fd8026c998bc0835abf4885f4"
+    },
+    {
+      "path": "src/megalodon/dynamics/eqgat/eqgat_modules.py",
+      "size": 9391,
+      "sha256": "c15f7d046ae24ce091ffb6e2a9a07a112d5755d6d49affb4b670314a87496753"
+    },
+    {
+      "path": "src/megalodon/dynamics/eqgat/eqgat_wrapper.py",
+      "size": 2479,
+      "sha256": "897515d68f38bd40dc5694c2950f2401f5d89d16ddd57dc1fe39a691d8eeb39b"
+    },
+    {
+      "path": "src/megalodon/dynamics/fn_model.py",
+      "size": 28073,
+      "sha256": "4e0fa72367deacedc1168fa542b9e49827691a6c5b5cc01b47f1d815aa4b1991"
+    },
+    {
+      "path": "src/megalodon/dynamics/jodo.py",
+      "size": 23268,
+      "sha256": "25c76ca60f36711d27004d0633a9e48a304014e87b93b992bb786fd74e01ad00"
+    },
+    {
+      "path": "src/megalodon/dynamics/mega_large.py",
+      "size": 72595,
+      "sha256": "0f672c19fa357a35c668a64215c8fe1dc872c403fb6d1169afc1de585dca9805"
+    },
+    {
+      "path": "src/megalodon/dynamics/megaflow_semla_ckpt/__init__.py",
+      "size": 680,
+      "sha256": "057225c89d8aa03a0fb960c3cacf61e46897ec858de905d506ec1d087becb46a"
+    },
+    {
+      "path": "src/megalodon/dynamics/megaflow_semla_ckpt/functional.py",
+      "size": 25758,
+      "sha256": "f64ff12d17f3c7dc53835793984ef655cefcbfe1b964b4d2c5dd0f6fcd94ba92"
+    },
+    {
+      "path": "src/megalodon/dynamics/megaflow_semla_ckpt/mega_pyg.py",
+      "size": 76293,
+      "sha256": "590e5c126266453303c3dc68895d0b32d4fe368e5069e9dd926285125f467c24"
+    },
+    {
+      "path": "src/megalodon/dynamics/megaflow_semla_ckpt/mimic_semla_wrapper.py",
+      "size": 8928,
+      "sha256": "e0f37bef547c32cf33f7b80ddb727024492f4be78e1a01445e976bb59caae9cd"
+    },
+    {
+      "path": "src/megalodon/dynamics/megaflow_semla_ckpt/original_semla_ckpt.py",
+      "size": 6409,
+      "sha256": "f60f54aecca186afd20ec3e992af48bcd55bd47dd782f2ea255ea69c9519c031"
+    },
+    {
+      "path": "src/megalodon/dynamics/megaflow_semla_ckpt/semla.py",
+      "size": 36093,
+      "sha256": "08889c392baa9d9235c1473a9dddb51550f7e3b83ebbad75b2ad594fe0a6f9ed"
+    },
+    {
+      "path": "src/megalodon/dynamics/megaflow_semla_ckpt/semla_wrapper.py",
+      "size": 4870,
+      "sha256": "dae9981a19b95e1d0147b5bb1aec8f9d1b1df9f17d4e46bc8218ca3dfae42dd6"
+    },
+    {
+      "path": "src/megalodon/dynamics/utils.py",
+      "size": 15636,
+      "sha256": "e0811d0ff294c463d21a8d19c05b9ca9f3eadad926a22a42ec7b89be7a6310ac"
+    },
+    {
+      "path": "src/megalodon/interpolant/__init__.py",
+      "size": 680,
+      "sha256": "057225c89d8aa03a0fb960c3cacf61e46897ec858de905d506ec1d087becb46a"
+    },
+    {
+      "path": "src/megalodon/interpolant/builder.py",
+      "size": 6581,
+      "sha256": "b6db82e44a33a943284cdf6905b44723aa25513911284d29d54288f6bfe6c0ef"
+    },
+    {
+      "path": "src/megalodon/interpolant/continuous_diffusion.py",
+      "size": 10045,
+      "sha256": "2d5e46d496432d5416ebee706dda4b833eef797d050bd336ac2f33a509bd5150"
+    },
+    {
+      "path": "src/megalodon/interpolant/continuous_euclidean_fm.py",
+      "size": 10529,
+      "sha256": "27f951505843ed67de31f03f7589c8e7e676bc94b2629b0c2b6e10e50117acea"
+    },
+    {
+      "path": "src/megalodon/interpolant/discrete_diffusion.py",
+      "size": 12592,
+      "sha256": "8b317403afda2f0d27e7fce0374ea45922bb7f64f0ddcbcefa7191e755ea40c4"
+    },
+    {
+      "path": "src/megalodon/interpolant/discrete_fm.py",
+      "size": 22755,
+      "sha256": "1e8ebe302e47cfe4001159a58eb44a46d0057db5e2f4965cf39185cdfe6f1f04"
+    },
+    {
+      "path": "src/megalodon/interpolant/interpolant.py",
+      "size": 4195,
+      "sha256": "f9e62cb321f49bff21cc04efbe01bcb74e60eb2ae54382b556716ab1ded9ec67"
+    },
+    {
+      "path": "src/megalodon/interpolant/interpolant_scheduler.py",
+      "size": 9221,
+      "sha256": "f7b4569ea3b3dba4333e92c27c5635579c53ac85fbb5d67743f4e9ca8d5d3da8"
+    },
+    {
+      "path": "src/megalodon/interpolant/interpolant_utils.py",
+      "size": 2029,
+      "sha256": "e22488c47acfdaeec1b548df8042fdb73750659d2ce4dfe91616894503b88a7b"
+    },
+    {
+      "path": "src/megalodon/interpolant/ot.py",
+      "size": 2792,
+      "sha256": "a221517acb42cc269d54998e1ad636e84cc18b09952db8e439c5825bdf11af85"
+    },
+    {
+      "path": "src/megalodon/metrics/__init__.py",
+      "size": 680,
+      "sha256": "057225c89d8aa03a0fb960c3cacf61e46897ec858de905d506ec1d087becb46a"
+    },
+    {
+      "path": "src/megalodon/metrics/fpscores.pkl.gz",
+      "size": 3848394,
+      "sha256": "10dcef9340c873e7b987924461b0af5365eb8dd96be607203debe8ddf80c1e73"
+    },
+    {
+      "path": "src/megalodon/metrics/geometry.py",
+      "size": 4850,
+      "sha256": "7b5144cd7015c64acd8c4978ee206557c683c08c128e9a175281e818fe3fe96b"
+    },
+    {
+      "path": "src/megalodon/metrics/molecule.py",
+      "size": 6012,
+      "sha256": "4b3d14360e14de0fa26aded06e418e3d0e800481fea38b1ce1d29b82d4e9d885"
+    },
+    {
+      "path": "src/megalodon/metrics/molecule_evaluation_callback.py",
+      "size": 7275,
+      "sha256": "7d59314778dcbf2a8ecb8e759564c5defc09c4744b7c8e7715529c536741f1e9"
+    },
+    {
+      "path": "src/megalodon/metrics/molecule_metrics_2d.py",
+      "size": 7368,
+      "sha256": "a778fe588a05be22c36153e797480f593fbd51b0a39df2b48983412e816d03ba"
+    },
+    {
+      "path": "src/megalodon/metrics/molecule_metrics_3d.py",
+      "size": 7760,
+      "sha256": "3a751a79ee52c2186c1e1970fa405c47373a42faf9bc5b902067d3c411208f06"
+    },
+    {
+      "path": "src/megalodon/metrics/molecule_novelty_similarity.py",
+      "size": 4240,
+      "sha256": "752811f727fa7a8ebef212c35a704a02e64b67bc5ffa4992f3cd818248471176"
+    },
+    {
+      "path": "src/megalodon/metrics/molecule_stability_2d.py",
+      "size": 7480,
+      "sha256": "05750f25122abc3115024b95ec29ec01be24ea85843531b3a6fd107304f99a25"
+    },
+    {
+      "path": "src/megalodon/metrics/utils.py",
+      "size": 2963,
+      "sha256": "e589ac15b7fce237a6393b7661bd1764ca57ddea5340ad03e9c1c46c401febe9"
+    },
+    {
+      "path": "src/megalodon/models/__init__.py",
+      "size": 680,
+      "sha256": "057225c89d8aa03a0fb960c3cacf61e46897ec858de905d506ec1d087becb46a"
+    },
+    {
+      "path": "src/megalodon/models/denoising_models.py",
+      "size": 11159,
+      "sha256": "e562517703e079121d6a7a2072fb001e005e83a6ba9ff9d49f11b11d771c26ac"
+    },
+    {
+      "path": "src/megalodon/models/loss_fn.py",
+      "size": 4702,
+      "sha256": "7581e380dc6eb6025284a191ec095983aa0c260392fd1c56ccaaaadf490d7e27"
+    },
+    {
+      "path": "src/megalodon/models/module.py",
+      "size": 30136,
+      "sha256": "ac8dcb158dee2c98b7e23b32bae65bd3e1a09a4786b6dd6f8347d86040d741df"
+    },
+    {
+      "path": "src/megalodon/models/module_adaptive_sample_weight.py",
+      "size": 31227,
+      "sha256": "0b4b90406419dc4920f05230189a8037582ae4b6421f22d38b145f1f38626e71"
+    },
+    {
+      "path": "src/megalodon/models/scheduler.py",
+      "size": 3212,
+      "sha256": "385005ee3788f5751f4d399d30f7aea43452240b0af5fc73d32613f9169043da"
+    },
+    {
+      "path": "src/megalodon/models/self_conditioning.py",
+      "size": 7695,
+      "sha256": "495d0459a874a75e92d0c10a98278281e7f43d56ccdd66794c35b983d090834b"
+    },
+    {
+      "path": "src/megalodon/models/utils_train.py",
+      "size": 2109,
+      "sha256": "b528cb01163c84289690a15b9742357f2dabf6685834a1d99e0d6b343f5ebe7b"
+    },
+    {
+      "path": "tests/diff_amrsa/test_data_safety.py",
+      "size": 853,
+      "sha256": "9c4ef6bf15ad90f4160fdcde7c89fa72db24e46cf01a17bfb19655b7ab168841"
+    },
+    {
+      "path": "tests/diff_amrsa/test_pipeline.py",
+      "size": 4132,
+      "sha256": "59c5b5cd700a0e1962b3770c09bbc49b65d877147ac98cdee4aebbbfdf82ace6"
+    },
+    {
+      "path": "tests/diff_amrsa/test_release_contract.py",
+      "size": 2514,
+      "sha256": "b59782957d11fe4e18bc53646904c4401da15bf177f2f812f8363948a13d3e06"
+    }
+  ],
+  "notes": [
+    "No .git directory",
+    "No historical outputs",
+    "No pretrained/finetuned checkpoints included",
+    "README embeds assets/diff_amrsa_overview.png using a repository-relative path",
+    "RELEASE_MANIFEST.json is excluded from its own hash list"
+  ]
+}

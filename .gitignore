@@ -1,24 +1,43 @@
+# Python build and editor artifacts
 __pycache__/
 *.py[cod]
+*.egg-info/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
-.DS_Store
+.venv/
+venv/
+.idea/
+.vscode/
 
-*.ckpt
-*.pt
-*.pickle
-*.pkl
-*.joblib
-*.sdf
-*.npy
-
-data/raw/
-data/processed/
-results/
-generated/
-figures/
+# Experiment outputs and model artifacts
 outputs/
+results/
+resutls/
+generated/
+sdfs/
+run_diff_amrsa/
+checkpoints/
 wandb/
 lightning_logs/
-*.log
+*.ckpt
+*.pth
+*.joblib
+
+# Generated processed datasets, keep data documentation
+/data/*
+!/data/README.md
+**/raw/
+**/processed/
+**/resume_cache/
+
+# Local machine paths and secrets
+configs/local.env
+.env
+.env.*
+!.env.example
+
+# Do not commit nested Git directories or archived scripts
+**/.git/
+*.bak_*
+*.py.bak*

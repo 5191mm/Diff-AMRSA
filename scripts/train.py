@@ -24,11 +24,11 @@ from lightning import pytorch as pl
 from lightning.pytorch.callbacks import LearningRateMonitor, ModelCheckpoint
 from omegaconf import DictConfig, OmegaConf
 
-from diff_amrsa.data.batch_preprocessor import BatchPreProcessor
-from diff_amrsa.data.molecule_datamodule import MoleculeDataModule
-from diff_amrsa.data.statistics import Statistics
-from diff_amrsa.metrics.molecule_evaluation_callback import MoleculeEvaluationCallback
-from diff_amrsa.models.module import Graph3DInterpolantModel
+from megalodon.data.batch_preprocessor import BatchPreProcessor
+from megalodon.data.molecule_datamodule import MoleculeDataModule
+from megalodon.data.statistics import Statistics
+from megalodon.metrics.molecule_evaluation_callback import MoleculeEvaluationCallback
+from megalodon.models.module import Graph3DInterpolantModel
 
 
 @hydra.main(version_base=None, config_path="conf/qm9", config_name=None)

@@ -3,7 +3,7 @@ title: "Diff-AMRSA: Anti-MRSA Molecule Generation with 3D Diffusion Fine-Tuning"
 message: "If you use Diff-AMRSA, please cite this repository and the upstream Megalodon paper."
 type: software
 authors:
-  - family-names: "Diff-AMRSA contributors"
+  - name: "Diff-AMRSA contributors"
 version: "0.1.0"
 references:
   - type: article

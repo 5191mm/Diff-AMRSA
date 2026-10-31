@@ -12,9 +12,9 @@ in `configs/diff_amrsa_paths.env`. The default is:
 Then run:
 
 ```bash
-bash scripts/run_diff_amrsa_pipeline.sh raw
-bash scripts/run_diff_amrsa_pipeline.sh scheme_a
-bash scripts/run_diff_amrsa_pipeline.sh conformers
+bash scripts/run_legacy_pipeline.sh raw
+bash scripts/run_legacy_pipeline.sh scheme_a
+bash scripts/run_legacy_pipeline.sh conformers
 ```
 
 Generated raw and processed files are ignored by Git.

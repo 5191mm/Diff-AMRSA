@@ -10,7 +10,7 @@ wandb_params:
   project: 'Diff-AMRSA'
 
 data:
-  dataset_root: ${oc.env:DIFF_AMRSA_DATASET_ROOT,/autodl-fs/data/custom_mrsa_schemeA_fixed_30_10}
+  dataset_root: ${oc.env:DIFF_AMRSA_DATASET_ROOT,/path/to/mrsa_conformers}
   processed_folder: "processed"
   batch_size: &batch_size 16
   inference_batch_size: 16
@@ -188,7 +188,7 @@ lr_scheduler:
 strict_compare:
   enabled: true
   role: 'finetune_mrsa'
-  dataset_root: ${oc.env:DIFF_AMRSA_DATASET_ROOT,/autodl-fs/data/custom_mrsa_schemeA_fixed_30_10}
+  dataset_root: ${oc.env:DIFF_AMRSA_DATASET_ROOT,/path/to/mrsa_conformers}
   train_seed: 42
   n_epochs: 30
   batch_size: 16

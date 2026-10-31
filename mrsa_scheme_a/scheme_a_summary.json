@@ -1,0 +1,20 @@
+{
+  "rows": 47353,
+  "activity_label_counts": {
+    "1": 37506,
+    "0": 9847
+  },
+  "mic_censor_type_counts": {
+    "exact_active": 37506,
+    "inactive_over_threshold": 9847
+  },
+  "pmic_regression_rows": 37506,
+  "activity_classifier_rows": 47353,
+  "generation_rows_before_repeat": 47353,
+  "generation_rows_after_repeat": 153887,
+  "pmic_ug_ml_min": 1e-06,
+  "pmic_ug_ml_max": 128000000.0,
+  "pmic_train_min": 1e-06,
+  "pmic_train_median": 5.0,
+  "pmic_train_max": 99.9958681
+}

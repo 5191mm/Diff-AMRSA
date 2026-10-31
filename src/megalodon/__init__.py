@@ -1,16 +1,15 @@
-"""Compatibility shim for checkpoints or legacy imports that reference ``megalodon``.
+# SPDX-FileCopyrightText: Copyright (c) 2025 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+# SPDX-License-Identifier: Apache-2.0
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
 
-Diff-AMRSA uses ``diff_amrsa`` as the canonical Python package name because
-hyphens are not valid in Python import names. This shim keeps legacy
-Megalodon checkpoint loading and old scripts usable without duplicating code.
-New code should import from ``diff_amrsa``.
-"""
-from __future__ import annotations
-
-import diff_amrsa as _diff_amrsa
-
-__path__ = _diff_amrsa.__path__
-__all__ = getattr(_diff_amrsa, "__all__", [])
-
-def __getattr__(name):
-    return getattr(_diff_amrsa, name)
