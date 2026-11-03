@@ -2,6 +2,8 @@
 __pycache__/
 *.py[cod]
 *.egg-info/
+build/
+dist/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
@@ -41,3 +43,21 @@ configs/local.env
 **/.git/
 *.bak_*
 *.py.bak*
+
+# Research data and generated artifacts
+*.csv
+*.jsonl
+*.sdf
+*.mol2
+*.pkl
+*.pickle
+*.pt
+*.npz
+*.safetensors
+*.zip
+*.tar.gz
+*.log
+.DS_Store
+/mrsa_scheme_a/
+/processed_drug_mic_dataset.csv
+

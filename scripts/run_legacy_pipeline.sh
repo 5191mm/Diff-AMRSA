@@ -11,7 +11,8 @@ fi
 
 if [[ "${1:-}" == "--config" ]]; then
   shift
-  source "${1}"
+  CONFIG_FILE="${1}"
+  source "${CONFIG_FILE}"
   shift
 else
   echo "Please provide a local config: bash scripts/run_legacy_pipeline.sh --config configs/local.env <step>" >&2
@@ -97,13 +98,14 @@ case "${STEP}" in
     ;;
   all)
     for step_name in raw scheme_a conformers predictor finetune sample analyze; do
-      "${BASH_SOURCE[0]}" "${step_name}"
+      "${BASH_SOURCE[0]}" --config "${CONFIG_FILE}" "${step_name}"
     done
     ;;
-  help|*)
-    cat <<EOF
-Usage: bash scripts/run_legacy_pipeline.sh [raw|scheme_a|conformers|predictor|finetune|sample|baseline|analyze|all]
-Optional: bash scripts/run_legacy_pipeline.sh --config configs/local.env <step>
-EOF
+  help)
+    echo "Usage: bash scripts/run_legacy_pipeline.sh --config configs/local.env <raw|scheme_a|conformers|predictor|finetune|sample|baseline|analyze|all>"
+    ;;
+  *)
+    echo "Unknown step: ${STEP}" >&2
+    exit 2
     ;;
 esac

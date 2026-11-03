@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "diff-amrsa"
 readme = "README.md"
 description = "Diff-AMRSA: retrieval-augmented 3D molecular diffusion and coordinate refinement for anti-MRSA research"
-authors = [{ name = "Diff-AMRSA contributors" }]
+authors = [{ name = "5191mm" }]
 requires-python = ">=3.10"
 license = { file = "LICENSE/license_code.txt" }
 dynamic = ["version"]

@@ -2,7 +2,7 @@
 
 # Diff-AMRSA 可运行流程（新增模块）
 
-此流程基于 `mrsa1031.zip/main.tex` 和 `figure/model.png`。执行以下命令前须完成仓库依赖安装，并准备可信的预训练权重和原始 `processed` 数据。所有命令从仓库根目录执行。
+此流程对应论文中的图对比学习、检索条件扩散与后验流匹配三个模块。执行以下命令前须完成仓库依赖安装，并准备可信的预训练权重和原始 `processed` 数据。所有命令从仓库根目录执行。
 
 ```bash
 export PYTHONPATH="$PWD/src:$PYTHONPATH"
@@ -16,7 +16,7 @@ python -m pip install -e .
 export DATA=/path/to/custom_mrsa_schemeA_fixed_30_10
 export CONFIG=scripts/conf/drugs/mrsa_diffusion_finetune_scheme_a.yaml
 export BASE_CKPT=/path/to/trusted_mrsa_finetuned.ckpt
-export ACTIVITY_TABLE=mrsa_scheme_a/processed_drug_mic_dataset_schemeA.csv
+export ACTIVITY_TABLE=/path/to/local/processed_drug_mic_dataset_schemeA.csv
 mkdir -p run_diff_amrsa
 ```
 

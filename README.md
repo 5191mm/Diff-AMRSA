@@ -48,8 +48,10 @@ Recommended: Linux, Python 3.10+, NVIDIA CUDA GPU. Package versions and PyG CUDA
 ```bash
 conda create -n diff-amrsa python=3.10 -y
 conda activate diff-amrsa
-# Choose a compatible PyTorch and PyG build for your machine first
-pip install -e .
+# The supplied requirements.txt targets PyTorch 2.7 and CUDA 12.6
+# Use a matching CUDA/PyG environment, or adjust those packages for your system
+pip install -r requirements.txt
+pip install -e . --no-deps
 export PYTHONPATH="$PWD/src:$PYTHONPATH"
 python -m pytest -q tests/diff_amrsa
 ```
@@ -58,9 +60,9 @@ python -m pytest -q tests/diff_amrsa
 
 ## Data and checkpoints
 
-The example CSV files in the repository are *not* the processed model splits. You must supply the genuine `processed/train_h.pt`, `val_h.pt`, and `test_h.pt` plus their training priors, a Megalodon-compatible pretrained checkpoint and the stage-specific trained model weights. The complete table must **not** be used directly as the retrieval library; the index must be built from **train only**.
+No intermediate CSV datasets are included in this repository. You must supply the genuine `processed/train_h.pt`, `val_h.pt`, and `test_h.pt` plus their training priors, a Megalodon-compatible pretrained checkpoint and the stage-specific trained model weights. The complete table must **not** be used directly as the retrieval library; the index must be built from **train only**.
 
-The primary dataset tools are:
+See [`data/README.md`](data/README.md) for local data configuration. The primary dataset tools are:
 
 ```bash
 python data_processing/prepare_dataset.py --help
@@ -68,7 +70,7 @@ python data_processing/build_conformers.py --help
 bash scripts/run_pipeline.sh help
 ```
 
-`data_processing/utils_data.py` recreates the previously missing PyG conversion and prior files. Categorical priors use all processed conformers. Reference 3D geometry histograms default to a deterministic subset of at most 5,000 conformers: do not treat these summary histograms as a validated replacement for reference-data metrics. Preprocessing should be validated against original processed data before comparing paper results.
+`data_processing/utils_data.py` provides PyG conversion and prior-file generation utilities. Categorical priors use all processed conformers. Reference 3D geometry histograms default to a deterministic subset of at most 5,000 conformers: do not treat these summary histograms as a validated replacement for reference-data metrics. Preprocessing should be validated against original processed data before comparing paper results.
 
 ## Run the full Diff-AMRSA workflow
 
@@ -87,6 +89,10 @@ bash scripts/run_pipeline.sh rank --help
 
 See **[`docs/EXPERIMENT_GUIDE.md`](docs/EXPERIMENT_GUIDE.md)** for a complete, step-by-step example with the exact split and checkpoint arguments. Baseline-only experiments remain available separately (`scripts/run_legacy_pipeline.sh`, `docs/BASELINE_COMPARISON.md`); they are **not** equivalent to training the full retrieval-and-flow model.
 
+## Citation and reproducibility
+
+The repository is intended to support the accompanying research paper. For the software citation, use [`CITATION.cff`](CITATION.cff). The public code release excludes intermediate datasets and trained checkpoints. See [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md) for artifact requirements and the limits of the current validation.
+
 ## Testing and validation
 
 ```bash
@@ -95,10 +101,10 @@ python -m compileall -q src scripts data_processing evaluation tests
 bash -n scripts/run_pipeline.sh
 ```
 
-Independent tests cover retrieval weighting, contrastive gradients, molecular graph preservation, numerical geometry, conditioner activation, and dataset split safety. No GPU training was performed for this publication cleanup; see [`docs/REPOSITORY_AUDIT.md`](docs/REPOSITORY_AUDIT.md) for verified fixes and unresolved integration risks.
+Independent tests cover retrieval weighting, contrastive gradients, molecular graph preservation, numerical geometry, conditioner activation, and dataset split safety. The CPU component tests do not validate end-to-end GPU training or the quantitative results in the paper; see [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md) for the verification scope and remaining requirements.
 
 Evaluation functions named `posebusters_inspired` are **not** the official PoseBusters and must not be used to report official PB-valid. Re-run official PoseBusters and the complete evaluation on generated candidates.
 
 ## Licensing and attribution
 
-The underlying Megalodon implementation is credited to Reidenbach *et al.* (2025), with code and model-specific licenses and other third-party notices in [`LICENSE/`](LICENSE/) and [`MODEL_CARD_UPSTREAM.md`](MODEL_CARD_UPSTREAM.md). The added Diff-AMRSA code is a research extension. Respect separate license terms for pretrained NVIDIA model weights. See [`CITATION.cff`](CITATION.cff) for upstream citation information; update project authorship metadata before an official paper release.
+The root [`LICENSE.md`](LICENSE.md) contains the Apache License 2.0 for code that can be distributed under those terms. The Megalodon backbone is credited to Reidenbach *et al.* (2025). Original code notices, third-party licenses, and separate pretrained-weight terms remain in [`LICENSE/`](LICENSE/) and [`MODEL_CARD_UPSTREAM.md`](MODEL_CARD_UPSTREAM.md). See [`CITATION.cff`](CITATION.cff) for software and upstream citations.

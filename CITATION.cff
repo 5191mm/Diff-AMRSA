@@ -1,9 +1,10 @@
 cff-version: 1.2.0
-title: "Diff-AMRSA: Anti-MRSA Molecule Generation with 3D Diffusion Fine-Tuning"
-message: "If you use Diff-AMRSA, please cite this repository and the upstream Megalodon paper."
+title: "Diff-AMRSA: Retrieval-Augmented Three-Dimensional Molecular Generation for Anti-MRSA Research"
+message: "If you use this software, cite this repository and the upstream Megalodon work."
 type: software
+repository-code: "https://github.com/5191mm/Diff-AMRSA"
 authors:
-  - name: "Diff-AMRSA contributors"
+  - name: "5191mm"
 version: "0.1.0"
 references:
   - type: article

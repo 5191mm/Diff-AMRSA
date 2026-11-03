@@ -56,4 +56,5 @@ def test_release_has_clear_primary_entrypoints():
     assert (ROOT / 'scripts/run_pipeline.sh').is_file()
     assert (ROOT / 'data_processing/build_conformers.py').is_file()
     assert not (ROOT / 'process_mrsa_geom_scheme_a_fixedset_mp.py').exists()
-    assert not (ROOT / '.git').exists()
+    assert not (ROOT / 'src' / '.git').exists()
+    assert not (ROOT / 'Diff-AMRSA' / '.git').exists()

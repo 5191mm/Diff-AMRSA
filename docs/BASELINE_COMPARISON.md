@@ -10,8 +10,8 @@ No code changes are required for this line. Use the original GEOM checkpoint wit
 python scripts/sample_domain_adapted.py \
   --compare_group pretrained_baseline \
   --config_path scripts/conf/drugs/megalodon_diffusion.yaml \
-  --ckpt_path /autodl-fs/data/megalodon_large_diffusion.ckpt \
-  --predictor /autodl-fs/data/custom_mrsa_schemeA_fixed_30_10/processed/mrsa_activity_predictor_schemeA.joblib \
+  --ckpt_path /path/to/pretrained.ckpt \
+  --predictor /path/to/activity_predictor.joblib \
   --n_graphs 2000 \
   --top_k 200 \
   --batch_size 100 \
@@ -48,7 +48,7 @@ unset MRSA_RESUME_TRAINING_STATE
 PYTHONUNBUFFERED=1 HYDRA_FULL_ERROR=1 python scripts/train_domain_adaptation.py \
   --config-path conf/drugs \
   --config-name mrsa_diffusion_finetune_scheme_a \
-  resume=/autodl-fs/data/megalodon_large_diffusion.ckpt
+  resume=/path/to/pretrained.ckpt
 ```
 
 ## Strictness checks
